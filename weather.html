@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="weather.js"></script>
+  <link rel="stylesheet" href="styles-weather.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Previsioni del Tempo</title>
+</head>
+<body>
+   
+  <div class="container"> 
+    <div class="title-container">
+      <p id='data' onload="date()"></p>
+      <h3 id='city'>Città</h3>
+    </div>
+    <div class='info'>
+    <img id='icon' src="http://openweathermap.org/img/wn/02d@2x.png" alt=""> </img>
+  <p id='descr'>Condizioni del tempo</p>
+</div>
+
+  <div class='details'>
+    <div class="detail">
+  <h4>Vento</h4>
+  <p id='vento'>-</p> 
+   </div>
+   <div class="detail">
+  <h4>Temperatura</h4>
+  <p id='temp'>-</p>
+</div>
+  <div class="detail">
+  <h4>Umidità</h4>
+  <p id='hum'>-</p>
+</div>
+</div>
+<div class='input-city'>
+  <input class='input-search' type="text" id="cityName" placeholder="Cerca località...">
+  <button class='input-button' onclick="getWeather();">Cerca</button>
+</div>
+  
+
+</div>
+
+</body>
+</html>
